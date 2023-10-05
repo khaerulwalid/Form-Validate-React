@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.4)), url("https://images.pexels.com/photos/18427938/pexels-photo-18427938/free-photo-of-autumn-mountains.jpeg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  border-radius: 10px;
+  padding: 45px 65px;
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+  width: 250px;
+}
+
+.form-input input {
+  width: 100%;
+  padding: 10px 15px;
+  background-color: rgb(37, 37, 37);
+  border: 0;
+  outline: none;
+  color: white;
+}
+
+.app button {
+  padding: 15px 25px;
+  background-color: rgb(37, 37, 37);
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+}
+
+.app button:hover {
+  background-color: rgb(62, 60, 60);
+}
+
+.form-input span {
+  font-size: 14px;
+  color: rgb(224, 0, 0);
+  display: none;
+}
+
+input:invalid[focused="true"] ~ span {
+  display: block;
+}
+
+input:invalid[focused="true"] {
+  border: 1px solid red;
+}
